@@ -4,19 +4,20 @@ title: Andrea Rocchetto
 ---
 <div class="blurb">
 <h1><a name='header-n0' class='md-header-anchor '></a>The Quantum Computing Fact Sheet</h1>
+<h3><a name='header-n0' class='md-header-anchor '></a><i>Or: the 10 (+4) things you cannot get wrong about quantum computers</i></h3>
 <p>&nbsp;</p>
 
 <p>Research in quantum computing is coming out of the labs.  Because of its commercial and national security significance the advent of functioning quantum computers is subject to intense news coverage.</p>
 
-<p>As quantum computing becomes part of the public discourse and its concepts are communicated to wider audiences by news outlets, think tanks and policymakers, it is important to maintain a minimal level of factual correctness in describing its functioning and potential. Inflating the current state of progress or giving erroneous characterisations of the basic principles of functioning of a quantum computer hinders both the scientific and commercial progress of quantum computation.</p>
+<p>As quantum computing becomes part of the public discourse and its concepts are communicated to wider audiences by news outlets, think tanks and policymakers, it is important to maintain a minimal level of factual correctness in describing its functioning and potential. Inflating the current state of progress or giving erroneous characterisations of its basic principles hinders both the scientific and commercial progress of quantum computation.</p>
 
 <p>Key concepts in quantum computing have subtle definitions that are difficult to convey using simple metaphors or without employing lengthy explanations. It is partially the duty of the quantum computing research community to come up with better ways to popularise the field. </p>
 
-<p>As better ways to communicate quantum mechanics develop, we should strive to popularise quantum computation without making too many incorrect statements. The purpose of this fact sheet is to provide a list of facts that one cannot get wrong when talking or writing about quantum computers. Compliance with the information contained in this list would help one to ensure a minimal level of factual correctness.</p>
+<p>As better ways to communicate quantum mechanics develop, we should strive to popularise quantum computation in damage control mode. The purpose of this fact sheet is to provide a list of facts that one cannot get wrong when talking or writing about quantum computers. Compliance with the information contained in this list would help one to ensure a minimal level of factual correctness.</p>
 
-<p>The list below mainly focuses on concepts and research topics that have been often popularised in an erroneous way. The list should by no means be considered as an introduction to quantum computing. If this is what you are looking for we recommend the following resources.</p>
+<p>The list below mainly focuses on concepts and research topics that have been often popularised in an erroneous way. The list should by no means be considered an introduction to quantum computing. If this is what you are looking for we recommend the following resources.</p>
 
-<p>We believe it is important that the authors of this fact sheet remain accountable. You can find more information about the authors of this web page <a href="https://andrearocchetto.github.io/">here</a>.</p>
+<p>We believe it is important that the authors of this fact sheet remain accountable. You can find more information on the authors <a href="https://andrearocchetto.github.io/">here</a>.</p>
 
 <p>&nbsp;</p>
 
@@ -24,28 +25,26 @@ title: Andrea Rocchetto
 
 <ul>
 
-	<li>Quantum mechanics is a scientific theory that describes atoms and subatomic particles (like electrons or photons). A quantum computer exploits quantum mechanical effects to solve certain computational problems much faster than is allowed by computing devices that follow the laws of classical physics.</li>
+	<li>Quantum mechanics is a scientific theory that describes atoms and subatomic particles (like electrons or photons). A quantum computer exploits quantum mechanical effects with no classical analogue to solve certain computational problems much faster than is allowed by computing devices that manipulate information according to the laws of classical physics. Some of these effects are superposition, inference, and entanglement.</li>
 
-	<li>Quantum mechanics is a scientific theory that describes atoms and subatomic particles (like electrons or photons). A quantum computer exploits quantum mechanical effects to solve certain computational problems much faster than is allowed by computing devices that follow the laws of classical physics.</li>
+	<li>A qubit is not "0 and 1 at the same time" but a complex linear combination of 0 and 1. In a complex linear combination 0 and 1 are weighted by two, possibly complex, coefficients known as <i>amplitudes</i>. The square of an amplitude is proportional to the probability of observing the corresponding value (0 or 1). Amplitudes can interfere with each other. By means of <i>interference</i> one can increase the probability of observing the desired value (0 or 1). The concept of superposition has no good translation into everyday English. More on this (with a tentative everyday English translation) <a href="https://www.scottaaronson.com/blog/?p=2694#comment-1060627">here</a>.</li>
 
-	<li>A qubit is not "0 and 1 at the same time" but a complex linear combination of 0 and 1. This is something with no good translation into everyday English. More on this <a href="https://www.scottaaronson.com/blog/?p=2694#comment-1060627">here</a>.</li>
+	<li>A quantum computer cannot be thought as equivalent to multiple classical computers that share information and execute calculations in parallel. In this spirit, quantum computers do not get their advantage by checking all possible solutions at the same time.</li>
 
-	<li>Following from the previous point: a quantum computer cannot be thought as equivalent to multiple classical computers that share information and execute calculations in parallel. In this spirit, quantum computers do not get their advantage by checking all possible solutions at the same time.</li>
-
-	<li> The fact that n qubits are not the same thing as 2^n classical bits -- they take 2^n classical bits to *specify*, but you can't extract that many by *measuring* them
+	<li><i>n</i> qubits are not the same thing as <i>2<sup>n</sup></i> classical bits &ndash; they take <i>2<sup>n</sup></i> classical bits to <i>specify</i>, but you cannot extract that many by <i>measuring</i> them.
     </li>
 
-    <li>The role of entanglement (and how popularizers love to overemphasize it -- treating it as the profound new axiom of QM, rather than just a logical consequence of the ACTUAL axioms :-) )</li>
+    <li>Quantum entanglement is not a the profound new axiom of quantum mechanics but just a logical consequence of the actual axioms. As of today, it is unclear whether entanglement is a key resource for quantum computational power and its importance in this context should not be overemphasised.</li>
 
-    <li>- It makes no sense to ask "is a QC a million times faster than a classical computer? a billion times faster?"  The whole point is to gain an ASYMPTOTIC advantage</li>
+    <li>It makes no sense to ask "is a quantum computer a million times faster than a classical computer? a billion times faster?". The relevant question is "is a quantum computer asymptotically faster than a classical computer for a given problem?". We say that a quantum computer has an <i>asymptotic advantage</i> if there is a problem size after which quantum always beats classical. It is possible that even in a task where asymptotically quantum beats classical, for small instances of the problem classical is better than quantum.</li>
 
-	<li>Presently, quantum computers capable to function according to our theoretical models do not exist. Current machines are affected by significant levels of error which we are unable to control. </li>
+	<li>Quantum computers are not faster than classical computers for every type of computational task but only provide an advantage for certain classes of problems. Three prototypical examples are factoring numbers into primes, searching through unstructured databases, and simulating another quantum system (which is relevant for material and drug discovery). </li>
 
-	<li>Quantum computers are not faster than classical computers for every type of computational task but only provide advantage for certain classes of problems. Three prototypical examples are factoring numbers into primes, searching through unstructured databases, and simulating another quantum system (which is relevant for material and drug discovery). </li>
-
-	<li>When we say that quantum computers are faster than classical computers - as in the examples listed in the previous bullet point - we often do not have a mathematical proof that this is the case (we are working on this!). Notable exceptions are cases where the relevant issue is the number of accesses to the input data (like database search).</li>
+	<li>When we say that quantum computers are faster than classical computers - as in the examples listed in the previous bullet point - we do not always have a mathematical proof that this is the case (we are working on this!). Notable exceptions are cases where the relevant issue is the number of accesses to the input data (like database search).</li>
 
 	<li>Although QCs could break much of the encryption currently used to secure the Internet, there are other forms of encryption that are believed not to be breakable even by a quantum computer.</li>
+
+	<li>Presently, quantum computers capable to function according to our theoretical models do not exist. Current machines are affected by significant levels of error which we are unable to control. </li>
 
 </ul>
 
@@ -64,7 +63,7 @@ title: Andrea Rocchetto
 
 	<li>Quantum supremacy refers to a computational task that can only be performed in a reasonable time by a quantum computer (when a quantum computer takes 1 second and a classical computer takes 100 years we are confidently in the realm of quantum supremacy). </li>
 
-	<li>Tasks that have been proposed for near-future quantum supremacy experiments are highly specific to that goal  At the moment, their only known application is generating cryptographically certified random numbers. </li>
+	<li>Tasks that have been proposed for near-future quantum supremacy experiments are highly specific to that goal. At the moment, their only known application is generating cryptographically certified random numbers. </li>
 
 </ul>
 </div><!-- /.blurb -->

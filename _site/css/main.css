@@ -7,12 +7,12 @@ body { margin: 24px auto; width: 80%; }
   }
 }
 
+
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
-p { font-size: 1.1em; line-height: 1.4em; color: #333; }
-
-ul { font-size: 1.1em; line-height: 1.4em; color: #333; }
+p, ul { font-size: 1.1em; line-height: 1.4em; color: #333; text-align: justify;
+  text-justify: inter-word;}
 
 li:not(:last-child) {
     margin-bottom: 20px;
