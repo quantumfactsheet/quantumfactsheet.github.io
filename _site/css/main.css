@@ -10,7 +10,14 @@ body { margin: 24px auto; width: 80%; }
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
-p, ul { font-size: 1.1em; line-height: 1.4em; color: #333; }
+p { font-size: 1.1em; line-height: 1.4em; color: #333; }
+
+ul { font-size: 1.1em; line-height: 1.4em; color: #333; }
+
+li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 
 h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif';}
 h1 { font-size: 2.7em; }
