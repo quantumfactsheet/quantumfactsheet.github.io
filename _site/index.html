@@ -9,14 +9,7 @@
 		</head>
 
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<!-- <li><a href="/about">About</a></li> -->
-							<li><a href="authors">Authors</a></li>
-							<li><a href="learn">Learn more</a></li>
-	    		</ul>
-			</nav>
+			
 			<div class="container">
 
 
@@ -34,32 +27,31 @@
 
 <p>As better ways to communicate quantum mechanics develop, we should strive to popularise quantum computation in damage control mode. The purpose of this fact sheet is to provide a list of facts that one cannot get wrong when talking or writing about quantum computers. Compliance with the information contained in this list would help one to ensure a minimal level of factual correctness.</p>
 
-<p>The list below mainly focuses on concepts and research topics that have been often popularised in an erroneous way. The list should by no means be considered an introduction to quantum computing. If this is what you are looking for we recommend the following resources.</p>
+<p>The list below mainly focuses on concepts and research topics that have been often popularised in an erroneous way. The list should by no means be considered an introduction to quantum computing.</p>
 
-<p>We believe it is important that the authors of this fact sheet remain accountable. You can find more information on the authors <a href="authors">here</a>.</p>
-
+<p>We believe it is important that the authors of this fact sheet remain accountable. <a href="https://www.scottaaronson.com/">Scott Aaronson</a> (UT Austin) and <a href="https://andrearocchetto.github.io/">Andrea Rocchetto</a> (UT Austin) wrote this fact sheet. Complaints should be addressed to <a href="mailto:andrea@cs.utaustin.edu">Andrea</a>.</p>
 <p>&nbsp;</p>
 
 <h3><a name='header-n19' class='md-header-anchor '></a>General facts</h3>
 
 <ul>
 
-	<li>Quantum mechanics is a scientific theory that describes atoms and subatomic particles (like electrons or photons). A quantum computer exploits quantum mechanical effects with no classical analogue to solve certain computational problems much faster than is allowed by computing devices that manipulate information according to the laws of classical physics. Some of these effects are superposition, inference, and entanglement.</li>
+	<li>Quantum mechanics is a scientific theory that describes atoms and subatomic particles (like electrons or photons). By exploting physical effects with no classical analogue, quantum computers can efficiently solve certain computational problmes that are challenging for classical computers (present or future, big or small). Some of these effects are superposition, inference, and entanglement.</li>
 
-	<li>A qubit is not "0 and 1 at the same time" but a complex linear combination of 0 and 1. In a complex linear combination 0 and 1 are weighted by two, possibly complex, coefficients known as <i>amplitudes</i>. The square of an amplitude is proportional to the probability of observing the corresponding value (0 or 1). Amplitudes can interfere with each other. By means of <i>interference</i> one can increase the probability of observing the desired value (0 or 1). The concept of superposition has no good translation into everyday English. More on this (with a tentative everyday English translation) <a href="https://www.scottaaronson.com/blog/?p=2694#comment-1060627">here</a>.</li>
+	<li>A qubit is not "0 and 1 at the same time" but a complex linear combination of 0 and 1. In a complex linear combination 0 and 1 are associated to two, possibly complex, coefficients known as <i>amplitudes</i>. The square of an amplitude is proportional to the probability of observing the corresponding value (0 or 1). Amplitudes can interfere with each other; that is, one amplitude can reinforce or cancel the other. By means of <i>interference</i> one can increase the probability of observing the desired value (0 or 1). The concept of superposition has no good translation into everyday English. More on this (with a tentative everyday English translation) in <a href="https://www.scottaaronson.com/blog/?p=2694#comment-1060627">this blog post</a> by Scott Aaronson.</li>
 
-	<li>A quantum computer cannot be thought as equivalent to multiple classical computers that share information and execute calculations in parallel. In this spirit, quantum computers do not get their advantage by checking all possible solutions at the same time.</li>
+	<li>A quantum computer cannot be thought as equivalent to multiple classical computers that share information and execute calculations in parallel. In this spirit, quantum computers do not get their advantage by checking all possible solutions at the same time. More on this, with bonus reflections on the ethical implications of quantum computing, in <a href="https://arxiv.org/pdf/1712.05380.pdf">this essay</a> by Ronald de Wolf.</li>
 
 	<li><i>n</i> qubits are not the same thing as <i>2<sup>n</sup></i> classical bits &ndash; they take <i>2<sup>n</sup></i> classical bits to <i>specify</i>, but you cannot extract that many by <i>measuring</i> them.
     </li>
 
     <li>Quantum entanglement is not a profound new axiom of quantum mechanics but just a logical consequence of the actual axioms. As of today, it is unclear whether entanglement is a key resource for quantum computational power and its importance in this context should not be overemphasised.</li>
 
-    <li>It makes no sense to ask "is a quantum computer a million times faster than a classical computer? a billion times faster?". The relevant question is "is a quantum computer asymptotically faster than a classical computer for a given problem?". We say that a quantum computer has an <i>asymptotic advantage</i> if there is a problem size after which quantum always beats classical. It is possible that even in a task where asymptotically quantum beats classical, for small instances of the problem classical is better than quantum.</li>
+    <li>When talking about the power of quantum computer in abstract terms it makes no sense to ask "is a quantum computer a million times faster than a classical computer? a billion times faster?". The relevant question is "is a quantum computer asymptotically faster than a classical computer for a given problem?". We say that a quantum computer has an <i>asymptotic advantage</i> if there is a problem size after which quantum always beats classical. It is possible that, even in a task where asymptotically quantum beats classical, for small instances of the problem classical is still better than quantum.</li>
 
 	<li>Quantum computers are not faster than classical computers for every type of computational task but only provide an advantage for certain classes of problems. Three prototypical examples are factoring numbers into primes, searching through unstructured databases, and simulating another quantum system (which is relevant for material and drug discovery). </li>
 
-	<li>When we say that quantum computers are faster than classical computers - as in the examples listed in the previous bullet point - we do not always have a mathematical proof that this is the case (we are working on this!). Notable exceptions are cases where the relevant issue is the number of accesses to the input data (like database search).</li>
+	<li>When we say that quantum computers are faster than classical computers - as in the examples listed in the previous bullet point - we do not always have a mathematical proof that this is the case. Notable exceptions are cases where the relevant issue is the number of accesses to the input data (like database search).</li>
 
 	<li>Although quantum computers could break much of the encryption currently used to secure the Internet, there are other forms of encryption that are believed not to be breakable even by a quantum computer.</li>
 
@@ -78,7 +70,7 @@
 <h4><a name='header-n55' class='md-header-anchor '></a>Quantum supremacy</h4>
 
 <ul>
-	<li>Read <a href="https://www.scottaaronson.com/blog/?p=4317">Scott’s Supreme Quantum Supremacy FAQ</a>.</li>
+	<li>Read <a href="https://www.scottaaronson.com/blog/?p=4317">Scott’s Supreme Quantum Supremacy FAQ</a> by Scott Aaronson.</li>
 
 	<li>Quantum supremacy refers to a computational task that can only be performed in a reasonable time by a quantum computer (when a quantum computer takes 1 second and a classical computer takes 100 years we are confidently in the realm of quantum supremacy). </li>
 
