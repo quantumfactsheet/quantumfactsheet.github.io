@@ -11,7 +11,7 @@ body { margin: 24px auto; width: 80%; }
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
-p, ul { font-size: 1.1em; line-height: 1.4em; color: #333; text-align: justify;
+p, ul, ol { font-size: 1.1em; line-height: 1.4em; color: #333; text-align: justify;
   text-justify: inter-word;}
 
 li:not(:last-child) {
